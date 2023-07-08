@@ -1,4 +1,6 @@
 bicycles = ['trek', 'cannondale', 'redline', 'specialized']
-message = f"私の最初の自転車は{bicycles[0].title()}でした。"
+for b in bicycles:
+  message = f"私の最初の自転車は{b.title()}でした。"
+  print(message)
 
-print(message)
+print("end")

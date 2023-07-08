@@ -1,4 +1,4 @@
-answer = 17
+answer = 67
 
-if answer != 42:
-    print("正しい答えではありません。もう一度挑戦してください！")
+if 3 <= answer <= 42:
+    print("正しいです！")

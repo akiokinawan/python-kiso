@@ -10,9 +10,9 @@ class Dog:
         """イヌに「おすわり」の命令を実行する"""
         print(f"{self.name}はおすわりしている。")
 
-    def roll_over(self):
+    def roll_over(self, count=1):
         """イヌに「ごろーん」の命令を実行する"""
-        print(f"{self.name}がごろーんした！")
+        print(f"{self.name}が{count}回ごろーんした！")
 
 my_dog = Dog('ウィリー', 6)
 your_dog = Dog('ルーシー', 3)
@@ -24,3 +24,4 @@ my_dog.sit()
 print(f"\nあなたのイヌの名前は{your_dog.name}です。")
 print(f"あなたのイヌは{your_dog.age}歳です。")
 your_dog.sit()
+your_dog.roll_over(12)

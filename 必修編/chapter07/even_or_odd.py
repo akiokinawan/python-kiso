@@ -1,7 +1,10 @@
 number = input("何か数を入力してください。奇数か偶数かを判定します: ")
-number = int(number)
+try:
+    number = int(number)
 
-if number % 2 == 0:
-    print(f"\n数{number}は偶数です。")
-else:
-    print(f"\n数{number}は奇数です。")
+    if number % 2 == 0:
+        print(f"\n数{number}は偶数です。")
+    else:
+        print(f"\n数{number}は奇数です。")
+except Exception as e:
+    print("数字以外は受け付けられません")

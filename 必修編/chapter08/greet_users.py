@@ -5,4 +5,5 @@ def greet_users(names):
         print(msg)
 
 usernames = ['hannah', 'ty', 'margot']
+print(type(usernames))
 greet_users(usernames)

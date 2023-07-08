@@ -7,7 +7,7 @@ confirmed_users = []
 # 確認済みのユーザーは確認済みリストに移動する
 while unconfirmed_users:
     current_user = unconfirmed_users.pop()
-
+    print(unconfirmed_users)
     print(f"確認中のユーザー: {current_user.title()}")
     confirmed_users.append(current_user)
 

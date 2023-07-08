@@ -12,5 +12,7 @@ while True:
         answer = int(first_number) / int(second_number)
     except ZeroDivisionError:
         print("ゼロで割ることはできません！")
+    except Exception:
+        print("想定外のことが起きました")
     else:
         print(answer)

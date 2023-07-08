@@ -14,7 +14,7 @@ def show_completed_models(completed_models):
     for completed_model in completed_models:
         print(completed_model)
 
-unprinted_designs = ['iPhoneケース', 'ロボットのペンダント', '12面体']
+unprinted_designs = ['iPhoneケース', 'ロボットのペンダント', '12面体', '123面体']
 completed_models = []
 
 print_models(unprinted_designs, completed_models)

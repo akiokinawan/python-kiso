@@ -18,5 +18,6 @@ while polling_active:
 
 # 投票を終了し、結果を表示する
 print("\n--- 投票結果 ---")
+print(responses)
 for name, response in responses.items():
     print(f"{name}さんが登りたいのは{response}です。")

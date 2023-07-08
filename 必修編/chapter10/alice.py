@@ -1,10 +1,12 @@
 filename = 'alice.txt'
 
 try:
-    with open(filename, encoding='utf-8') as f:
+    with open(filename, encoding='cp932') as f:
         contents = f.read()
 except FileNotFoundError:
     print(f"ごめんなさい。{filename} は見当たりません。")
+except UnicodeDecodeError:
+    print(f"ごめんなさい。{filename} デコードに失敗しました")
 else:
     # ファイル内のだいたいの単語の数を数える
     words = contents.split()

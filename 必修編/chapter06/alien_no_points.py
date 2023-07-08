@@ -1,4 +1,4 @@
-alien_0 = {'color': 'green', 'speed': 'slow'}
+alien_0 = {'color': 'green', 'speed': 'slow', 'points':'100'}
 
-point_value = alien_0.get('points', '点数は設定されていません。')
+point_value = alien_0.get('head', '頭は設定されていません。')
 print(point_value)
